@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Nails & Spa</title>
+  <style>
+    :root {
+      --pink: #f7c6d0;
+      --rose: #e89bb0;
+      --dark: #2b2b2b;
+      --light: #ffffff;
+      --gray: #6b6b6b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #fafafa;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--pink), var(--rose));
+      color: var(--light);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    header a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: var(--light);
+      color: var(--dark);
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 20px auto 0;
+      color: var(--gray);
+    }
+
+    .services {
+      background: #fff;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      padding: 30px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--gray);
+    }
+
+    .gallery {
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery-item {
+      background: linear-gradient(135deg, #eee, #ddd);
+      height: 200px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--rose), var(--pink));
+      color: var(--light);
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2.2rem;
+    }
+
+    .cta p {
+      margin: 15px 0 25px;
+    }
+
+    .cta a {
+      background: var(--light);
+      color: var(--dark);
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1f1f1f;
+      color: #ccc;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      display: block;
+      margin-top: 6px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Luna Nails & Spa</h1>
+    <p>Relax. Refresh. Feel Beautiful.</p>
+    <a href="#">Book an Appointment</a>
+  </header>
+
+  <section class="about">
+    <h2>Welcome to Luna Nails</h2>
+    <p>
+      At Luna Nails & Spa, we specialize in elegant nail care and relaxing spa treatments.
+      Our licensed technicians use premium products to give you flawless results in a calm,
+      modern environment.
+    </p>
+  </section>
+
+  <section class="services">
+    <h2 style="text-align:center;">Our Services</h2>
+    <div class="service-grid">
+      <div class="card">
+        <h3>Manicure</h3>
+        <p>Classic, gel, and luxury manicures tailored to you.</p>
+      </div>
+      <div class="card">
+        <h3>Pedicure</h3>
+        <p>Relaxing spa pedicures for total comfort and care.</p>
+      </div>
+      <div class="card">
+        <h3>Acrylic & Gel Nails</h3>
+        <p>Durable, stylish sets with custom designs.</p>
+      </div>
+      <div class="card">
+        <h3>Nail Art</h3>
+        <p>Creative designs, seasonal styles, and custom looks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/nails1.jpg" alt="nails1">
+      </div>
+      <div class="gallery-item">
+        <img src="images/nails2.jpg" alt="nails2">
+      </div>
+      <div class="gallery-item">
+        <img src="images/nails3.jpg" alt="nails3">
+      </div>
+      <div class="gallery-item">
+        <img src="images/nails4.jpg" alt="nails4">
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Treat Yourself?</h2>
+    <p>Call us or book online today.</p>
+    <a href="#">Book Now</a>
+  </section>
+
+  <footer>
+    © 2026 Luna Nails & Spa
+    <span>123 Main Street • (555) 123‑4567</span>
+  </footer>
+
+</body>
+</html>
