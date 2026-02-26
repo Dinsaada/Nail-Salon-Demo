@@ -1,236 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luna Nails & Spa</title>
-  <style>
-    :root {
-      --pink: #f7c6d0;
-      --rose: #e89bb0;
-      --dark: #2b2b2b;
-      --light: #ffffff;
-      --gray: #6b6b6b;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velvet Studio | Hair Salon in Phoenix, AZ</title>
+<meta name="description" content="Velvet Studio is a modern hair salon in Phoenix, AZ offering haircuts, balayage, color, extensions, and bridal styling.">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f2f1ee;color:#111;line-height:1.6}
+section{max-width:1100px;margin:auto;padding:60px 20px;text-align:center}
+h2{margin-bottom:20px}
 
-    body {
-      background: #fafafa;
-      color: var(--dark);
-      line-height: 1.6;
-    }
+header{background:#111;color:#fff;padding:80px 20px;text-align:center}
+header p{color:#ccc;margin:10px 0 20px}
 
-    header {
-      background: linear-gradient(135deg, var(--pink), var(--rose));
-      color: var(--light);
-      padding: 60px 20px;
-      text-align: center;
-    }
+.btn{display:inline-block;padding:12px 28px;background:#c59d5f;color:#111;text-decoration:none;border-radius:30px;font-weight:bold;border:none;cursor:pointer}
 
-    header h1 {
-      font-size: 3rem;
-      letter-spacing: 1px;
-    }
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:30px}
+.card{background:#fff;padding:25px;border-radius:16px;box-shadow:0 10px 20px rgba(0,0,0,.05)}
 
-    header p {
-      margin-top: 10px;
-      font-size: 1.2rem;
-    }
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:16px}
 
-    header a {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 28px;
-      background: var(--light);
-      color: var(--dark);
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-    }
+.team img{width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:10px}
 
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-top:30px;text-align:left}
+iframe{width:100%;height:320px;border:none;border-radius:16px}
 
-    .about {
-      text-align: center;
-    }
+form input,form textarea{width:100%;padding:12px;margin-bottom:12px;border:1px solid #ddd;border-radius:8px}
 
-    .about p {
-      max-width: 700px;
-      margin: 20px auto 0;
-      color: var(--gray);
-    }
+.divider{margin:30px 0;border-top:1px solid #e5e5e5}
 
-    .services {
-      background: #fff;
-    }
+footer{background:#111;color:#aaa;text-align:center;padding:30px 20px;font-size:.9rem}
+footer a{color:#c59d5f;text-decoration:none}
 
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 40px;
-    }
-
-    .card {
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      padding: 30px;
-      text-align: center;
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: var(--gray);
-    }
-
-    .gallery {
-      text-align: center;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .gallery-item {
-      background: linear-gradient(135deg, #eee, #ddd);
-      height: 200px;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #999;
-      font-size: 0.9rem;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 14px;
-    }
-
-    .cta {
-      background: linear-gradient(135deg, var(--rose), var(--pink));
-      color: var(--light);
-      text-align: center;
-      padding: 70px 20px;
-    }
-
-    .cta h2 {
-      font-size: 2.2rem;
-    }
-
-    .cta p {
-      margin: 15px 0 25px;
-    }
-
-    .cta a {
-      background: var(--light);
-      color: var(--dark);
-      padding: 14px 32px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      background: #1f1f1f;
-      color: #ccc;
-      padding: 30px 20px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    footer span {
-      display: block;
-      margin-top: 6px;
-      color: #888;
-    }
-  </style>
+@media(max-width:600px){header h1{font-size:1.8rem}}
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Luna Nails & Spa</h1>
-    <p>Relax. Refresh. Feel Beautiful.</p>
-    <a href="#">Book an Appointment</a>
-  </header>
+<header>
+<h1>Velvet Studio</h1>
+<p>Modern Hair Salon in Phoenix, Arizona</p>
+<a href="tel:15551234567" class="btn">Call to Book</a>
+</header>
 
-  <section class="about">
-    <h2>Welcome to Luna Nails</h2>
-    <p>
-      At Luna Nails & Spa, we specialize in elegant nail care and relaxing spa treatments.
-      Our licensed technicians use premium products to give you flawless results in a calm,
-      modern environment.
-    </p>
-  </section>
+<section>
+<h2>Services</h2>
+<div class="grid">
+<div class="card">Haircuts & Styling</div>
+<div class="card">Color & Balayage</div>
+<div class="card">Extensions</div>
+<div class="card">Bridal & Events</div>
+</div>
+</section>
 
-  <section class="services">
-    <h2 style="text-align:center;">Our Services</h2>
-    <div class="service-grid">
-      <div class="card">
-        <h3>Manicure</h3>
-        <p>Classic, gel, and luxury manicures tailored to you.</p>
-      </div>
-      <div class="card">
-        <h3>Pedicure</h3>
-        <p>Relaxing spa pedicures for total comfort and care.</p>
-      </div>
-      <div class="card">
-        <h3>Acrylic & Gel Nails</h3>
-        <p>Durable, stylish sets with custom designs.</p>
-      </div>
-      <div class="card">
-        <h3>Nail Art</h3>
-        <p>Creative designs, seasonal styles, and custom looks.</p>
-      </div>
-    </div>
-  </section>
+<section>
+<h2>Meet Our Stylists</h2>
+<div class="grid team">
+<div class="card"><img src="images/stylist1.jpg" alt="Stylist Maria"><br><strong>Maria Lopez</strong><br>Balayage Specialist</div>
+<div class="card"><img src="images/stylist2.jpg" alt="Stylist Jasmine"><br><strong>Jasmine Carter</strong><br>Precision Cuts</div>
+<div class="card"><img src="images/stylist3.jpg" alt="Stylist Ava"><br><strong>Ava Nguyen</strong><br>Extensions & Bridal</div>
+</div>
+</section>
 
-  <section class="gallery">
-    <h2>Our Work</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="images/nails1.jpg" alt="nails1">
-      </div>
-      <div class="gallery-item">
-        <img src="images/nails2.jpg" alt="nails2">
-      </div>
-      <div class="gallery-item">
-        <img src="images/nails3.jpg" alt="nails3">
-      </div>
-      <div class="gallery-item">
-        <img src="images/nails4.jpg" alt="nails4">
-      </div>
-    </div>
-  </section>
+<section>
+<h2>Recent Work</h2>
+<div class="grid gallery">
+<img src="images/hair1.jpg" alt="Balayage example">
+<img src="images/hair2.jpg" alt="Modern haircut">
+<img src="images/hair3.jpg" alt="Color transformation">
+<img src="images/hair4.jpg" alt="Highlight example">
+</div>
+</section>
 
-  <section class="cta">
-    <h2>Ready to Treat Yourself?</h2>
-    <p>Call us or book online today.</p>
-    <a href="#">Book Now</a>
-  </section>
+<section>
+<h2>Visit Us in Phoenix</h2>
+<div class="contact">
+<div>
+<iframe src="https://www.google.com/maps?q=123+Main+Street+Phoenix+AZ+85001&output=embed"></iframe>
+<div style="margin-top:15px">
+<strong>Velvet Studio</strong><br>
+<a href="https://www.google.com/maps/search/?api=1&query=123+Main+Street+Phoenix+AZ+85001" target="_blank" style="color:#111;text-decoration:none">
+123 Main Street<br>Phoenix, AZ 85001</a>
+<br><br>
+<strong>Hours</strong><br>
+Mon–Fri: 9am–7pm<br>
+Sat: 9am–5pm<br>
+Sun: Closed
+</div>
+<div class="divider"></div>
+</div>
 
-  <footer>
-    © 2026 Luna Nails & Spa
-    <span>123 Main Street • (555) 123‑4567</span>
-  </footer>
+<div>
+<h3>Send Us a Message</h3>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="text" placeholder="Requested Service">
+<textarea rows="4" placeholder="Message"></textarea>
+<button type="button" class="btn" onclick="alert('Demo submission — messages would go to your email.')">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+
+<section style="background:#1c1c1c;color:#fff">
+<h2>Book Your Appointment Today</h2>
+<p style="color:#bbb">Call Velvet Studio to schedule your visit.</p>
+<a href="tel:15551234567" class="btn">Call (555) 123‑4567</a>
+</section>
+
+<footer>
+© 2026 Velvet Studio • Phoenix, AZ • <a href="tel:15551234567">(555) 123‑4567</a>
+</footer>
 
 </body>
 </html>
